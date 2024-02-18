@@ -4,22 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M Ticketing</title>
+  <title>Mister Ticketing</title>
 
   <!-- daisy ui & talwind cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- custom config js -->
+  <!-- Talwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'ticket-primary': '#1DD100',
+            'ticket-footer': '#030712',
+            'ticket-first': '#FFBF0F',
+            'ticket-second': '#F78C9C',
+          }
+        }
+      }
+    }
+  </script>
+
   <!-- custom css -->
   <link rel="stylesheet" href="styles/m-ticketing.css">
 </head>
 
-<body>
+<body class="font-raleway">
 
   <!-- header -->
-  <header>
+  <header class="container mx-auto">
     <!-- Navbar -->
-    <div class="navbar bg-base-100">
+    <div class="navbar mt-8 bg-base-100">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -35,89 +60,105 @@
             <li><a>Search</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl">Mister Ticketing</a>
+        <a class="btn btn-ghost text-4xl font-extrabold">Mister Ticketing</a>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
+        <ul class="menu menu-horizontal px-1 text-lg font-medium">
+          <li><a class="">Home</a></li>
           <li><a>About</a></li>
           <li><a>Destination</a></li>
           <li><a>Search</a></li>
         </ul>
       </div>
-      <div class="navbar-end">
-        <a class="btn">Bus <img src="images/bus-icon.png" alt=""></a>
+      <div class="navbar-end ">
+        <a class="btn border-2 border-ticket-primary text-xl text-ticket-primary font-bold">Bus
+          <img src="images/bus-icon.png" alt=""></a>
       </div>
     </div>
 
     <!-- Banner -->
-    <div class="hero min-h-screen bg-base-200 bg-[url('images/banner.png')]">
+    <div class="hero mt-8 h-[750px] rounded-[32px] bg-base-200 bg-[url('images/banner.png')]">
       <div class="hero-content text-center">
         <div class="">
-          <h1 class="text-5xl font-bold">End-to-End Travel with <br> <span>Mister Paribahan</span></h1>
-          <p class="py-6">Providing efficient and reliable transportation solutions, our bus company ensures safe
+          <h1 class="text-white text-5xl font-bold text-7xl">End-to-End Travel with <br> <span
+              class="text-ticket-primary">Mister
+              Paribahan</span></h1>
+          <p class="py-6 text-white text-lg">Providing efficient and reliable transportation solutions, our bus company
+            ensures
+            safe
             journeys <br> for passengers of all
             ages.</p>
-          <button class="btn btn-primary">Buy Tickets</button>
+          <button class="btn bg-ticket-primary border-none text-xl ">Buy Tickets</button>
         </div>
       </div>
     </div>
   </header>
 
   <!-- main -->
-  <main>
+  <main class="container mx-auto">
     <!-- section 1 -->
-    <section class="cupon-sec">
-      <h1>Best Offers for You</h1>
-      <div class="flex gap-16">
+    <section class="cupon-sec m-32">
+      <h1 class="text-4xl font-bold text-center">Best Offers for You</h1>
+      <div class="mt-8 flex gap-16 h-56">
         <div class="flex w-full">
-          <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
-            <h3>15% OFF</h3>
-            <p>on your next purchase <br>use by January 2024</p>
+          <div class="grid bg-ticket-first flex-grow w-9/12 card bg-base-300 rounded-box place-items-center">
+
+            <p class=""><span class="font-semibold text-6xl">15% OFF</span> <br> <span class="font-normal text-3xl">on
+                your next
+                purchase</span> <br><span class="font-light text-lg">use by January 2024</span></p>
           </div>
-          <div class="divider divider-horizontal"></div>
-          <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
-            <h3>NEW15</h3>
-            <p>Coupon Code</p>
+
+          <div class="grid bg-ticket-first flex-grow w-5/12 card bg-base-300 rounded-box place-items-center">
+
+            <p><span class="font-semibold text-4xl">NEW15</span> <br><span class="font-normal text-xl">Coupon
+                Code</span></p>
           </div>
         </div>
         <div class="flex w-full">
-          <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
-            <h3>20% OFF</h3>
-            <p>on your next purchase <br>use by January 2024</p>
+          <div class="grid bg-ticket-second flex-grow w-9/12 card bg-base-300 rounded-box place-items-center">
+            <!-- <p>20% OFF</p> -->
+            <p class=""><span class="font-semibold text-6xl">20% OFF</span> <br> <span class="font-normal text-3xl">on
+                your next
+                purchase</span> <br><span class="font-light text-lg">use by January 2024</span></p>
           </div>
-          <div class="divider divider-horizontal"></div>
-          <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
-            <h3>COUPLE20</h3>
-            <p>Coupon Code</p>
+          <!-- <div class="divider divider-horizontal"></div> -->
+          <div class="grid bg-ticket-second flex-grow w-5/12 card bg-base-300 rounded-box place-items-center">
+
+            <p><span class="font-semibold text-4xl">COUPLE 20</span> <br><span class="font-normal text-xl">Coupon
+                Code</span></p>
           </div>
         </div>
+      </div>
+      <div class="flex justify-center">
+        <a class="btn border-2 border-ticket-primary text-xl text-ticket-primary font-bold mt-8">See
+          All
+          Offers
+        </a>
       </div>
     </section>
 
     <!-- section 2 -->
-    <section class="ticket-sec">
+    <section class="ticket-sec text-center m-32">
 
     </section>
   </main>
 
   <!-- Footer 1 -->
-  <footer class="footer p-10 bg-neutral text-neutral-content">
+  <footer class="footer px-36 pt-28 pb-6 bg-ticket-footer text-neutral-content">
     <aside>
       <h6 class="footer-title">Mister-Ticket</h6>
       <p>Mister Ticket Ltd.<br>Providing reliable tech since 2023</p>
     </aside>
-    <nav>
+    <nav class="justify-self-end">
       <h6 class="footer-title">Download our app</h6>
-      <div class="grid grid-flow-col gap-4">
+      <div class="grid border-2 border-ticket-white p-2 grid-flow-col gap-4">
         <a><img src="images/playstore.png" alt=""></a>
         <p>Get it on <br>Google Play</p>
       </div>
     </nav>
   </footer>
-
   <!-- Footer 2 -->
-  <footer class="footer items-center p-4 bg-neutral text-neutral-content">
+  <footer class="footer px-36 pb-28 pt-6 items-center p-4 bg-ticket-footer text-neutral-content">
     <aside class="items-center grid-flow-col">
       <p>Copyright © Mister-Ticket Services Limited, 2024 - All right reserved</p>
     </aside>
