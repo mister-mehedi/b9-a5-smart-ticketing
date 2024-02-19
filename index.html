@@ -138,10 +138,11 @@
     </section>
 
     <!-- section 2 -->
-    <section class="ticket-sec text-center m-32 bg-[#F7F8F8]">
+    <section class="ticket-sec  mx-32 mt-32 bg-[#F7F8F8] rounded-box">
       <!-- Section 2 first part -->
-      <h1 class="text-6xl font-bold pt-16">Mister Paribahan</h1>
-      <p class="text-lg mt-4">Mister Paribahan, known for his punctuality, steers through traffic with precision,
+      <h1 class="text-6xl font-bold pt-16 text-center">Mister Paribahan</h1>
+      <p class="text-lg mt-4 text-center">Mister Paribahan, known for his punctuality, steers through traffic with
+        precision,
         ensuring
         passengers reach
         their
@@ -162,7 +163,7 @@
               <div
                 class="grid bg-green-100 border-ticket-primary rounded-xl text-xl text-ticket-primary font-bold p-4 grid-flow-col gap-4">
                 <a><img src="images/seat-green.png" alt=""></a>
-                <p><span id="seat-cnt">40</span> Seats Left</p>
+                <p><span id="seat-rem">40</span> Seats Left</p>
               </div>
             </div>
             <div class="flex flex-col mx-6 my-6 rounded-2xl bg-[#F7F8F8]">
@@ -194,9 +195,131 @@
 
       <!-- section 2 last part -->
       <div class="mt-8">
-        hello
+        <div class="bg-white m-4 rounded-box flex">
+          <div class="w-7/12 p-8">
+            <div>
+              <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+            </div>
+            <div class="flex justify-between py-6">
+              <div class="inline-flex gap-2">
+                <img src="images/seat-gray.png" alt="">
+                <p class="text-gray-400">Available</p>
+              </div>
+              <div class="inline-flex gap-2">
+                <img src="images/seat-green-filled.png" alt="">
+                <p class="text-ticket-primary">Available</p>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="flex justify-end  py-2 ">
+                <div class="bg-gray-200 px-9 py-2 rounded-lg">
+                  <img class="h-8 " src="images/steering.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="mt-4 inline-flex">
+                <div class="mr-6 p-2">A</div>
+                <div class="grid grid-cols-4 gap-8">
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">A1</div>
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg mr-8">A1</div>
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">A1</div>
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">A1</div>
+                </div>
+              </div>
+              <div class="mt-4 inline-flex">
+                <div class="mr-6 p-2">B</div>
+                <div class="grid grid-cols-4 gap-8">
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">B1</div>
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg mr-8">B2</div>
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">B3</div>
+                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">B4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-5/12 p-8">
+            <div>
+              <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+            </div>
+            <div class="mt-6 bg-gray-200 rounded-lg">
+              <div class="overflow-x-auto">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th class="text-base">Seat <sup><span
+                            class="font-inter px-2 bg-ticket-primary text-white rounded-lg" id="seat-cnt">0</span></sup>
+                      </th>
+                      <th class="text-base">Class</th>
+                      <th class="text-base">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <td>Cy Ganderton</td>
+                      <td>Quality Control Specialist</td>
+                      <td>Blue</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <td>Hart Hagerty</td>
+                      <td>Desktop Support Technician</td>
+                      <td>Purple</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <td>Brice Swyre</td>
+                      <td>Tax Accountant</td>
+                      <td>Red</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr class="mt-2 border-solid border-2 border-neutral-400">
+              <div class="mt-4 px-4 flex justify-between">
+                <div>Total Price</div>
+                <div class="mr-4">BDT <span class="font-inter" id="total-price">0</span></div>
+              </div>
+              <div class="mt-4 mx-4">
+                <label class="input h-20 input-bordered flex items-center gap-2">
+                  <input type="text" class="grow" placeholder="Have any Cupon?" />
+                  <button id="cupon-btn" class="btn bg-ticket-primary text-white">Apply</button>
+                </label>
+              </div>
+              <div class="mt-4 px-4 pb-4 flex justify-between">
+                <div>Grand Total</div>
+                <div class="mr-4">BDT <span class="font-inter" id="grand-total">0</span></div>
+              </div>
+            </div>
+            <div class="m-4">
+              <p class="py-2  font-semibold">Passenger Name*</p>
+              <label class="input input-bordered flex items-center gap-2 mb-2">
+                <input type="text" id="p-name" class="grow" placeholder="Enter your name" />
+              </label>
+              <p class="py-2 font-semibold">Phone Number*</p>
+              <label class="input input-bordered flex items-center gap-2 mb-2">
+                <input type="number" id="p-phone" class="grow" placeholder="Enter your phone number" />
+              </label>
+              <p class="py-2 font-semibold">Email ID</p>
+              <label class="input input-bordered flex items-center gap-2 mb-2">
+                <input type="text" id="p-email" class="grow" placeholder="Enter email" />
+              </label>
+
+              <button id="next-btn" class="btn rounded-box h-20 w-full bg-ticket-primary text-white">Next</button>
+
+              <div class="flex justify-around mt-4">
+                <p><u>Terms and Conditions</u></p>
+                <p><u>Cancellation Policy</u></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
       </div>
     </section>
+    <br><br>
   </main>
 
   <!-- Footer 1 -->
