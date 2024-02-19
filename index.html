@@ -95,9 +95,9 @@
   </header>
 
   <!-- main -->
-  <main class="container mx-auto">
+  <main class="">
     <!-- section 1 -->
-    <section class="cupon-sec m-32">
+    <section class="container mx-auto cupon-sec m-32">
       <h1 class="text-4xl font-bold text-center">Best Offers for You</h1>
       <div class="mt-8 flex gap-16 h-56">
         <div class="flex w-full">
@@ -138,7 +138,7 @@
     </section>
 
     <!-- section 2 -->
-    <section class="ticket-sec  mx-32 mt-32 bg-[#F7F8F8] rounded-box">
+    <section class="ticket-sec mx-2 px-32 mt-32 bg-slate-100 rounded-box">
       <!-- Section 2 first part -->
       <h1 class="text-6xl font-bold pt-16 text-center">Mister Paribahan</h1>
       <p class="text-lg mt-4 text-center">Mister Paribahan, known for his punctuality, steers through traffic with
@@ -154,7 +154,7 @@
       <!-- Section 2 middle part -->
       <div class="mt-8">
         <div class="flex w-full p-4">
-          <div class="grid  w-9/12 bg-white flex-grow card bg-base-300 rounded-box ">
+          <div class="grid  w-9/12 bg-white flex-grow card rounded-box ">
             <div class="flex justify-around py-6">
               <div class="grid  p-2 grid-flow-col gap-4">
                 <a><img src="images/bus-logo.png" alt=""></a>
@@ -171,11 +171,12 @@
                 <div>Route</div>
                 <div>Dhaka-Sylhet</div>
               </div>
+              <hr class="mt-2 mx-12 border-dashed border-1 border-neutral-400">
               <div class="flex justify-between py-6 px-12">
                 <div>Departure Time</div>
-                <div>9.00 PM</div>
+                <div class="font-inter">9.00 PM</div>
               </div>
-
+              <hr class="mt-2 mx-12 border-dashed border-1 border-neutral-400">
               <div class="flex justify-around py-6 px-12">
                 <div class="bg-[#C5C5C5] p-4 rounded-xl">Boarding Point - Laxmipur</div>
                 <div class="bg-[#C5C5C5] p-4 rounded-xl">Dropping Point - Bogura</div>
@@ -186,7 +187,7 @@
           <!-- <div class="divider divider-horizontal"></div> -->
           <div class="grid  w-3/12 bg-white flex-grow card bg-base-300 rounded-box place-content-center">
 
-            <p><img src="images/fare.png" alt=""><span class="font-semibold text-4xl">550 TK</span> <br><span
+            <p><img src="images/fare.png" alt=""><span class="font-semibold text-4xl font-inter">550 TK</span> <br><span
                 class="font-normal text-xl">Per Seat</span>
             </p>
           </div>
@@ -196,7 +197,7 @@
       <!-- section 2 last part -->
       <div class="mt-8">
         <div class="bg-white m-4 rounded-box flex">
-          <div class="w-7/12 p-8">
+          <div class="w-7/12 px-36 pb-8 pt-8">
             <div>
               <h1 class="text-2xl font-semibold">Select Your Seat</h1>
             </div>
@@ -238,7 +239,8 @@
               </div>
             </div>
           </div>
-          <div class="w-5/12 p-8">
+          <div class="divider divider-horizontal"></div>
+          <div class="w-5/12 px-8 pb-8 pt-8">
             <div>
               <h1 class="text-2xl font-semibold">Select Your Seat</h1>
             </div>
@@ -319,7 +321,7 @@
         <br>
       </div>
     </section>
-    <br><br>
+
   </main>
 
   <!-- Footer 1 -->
@@ -336,6 +338,9 @@
       </div>
     </nav>
   </footer>
+  <div class="bg-ticket-footer">
+    <hr class="mx-36 border-dashed border-1 border-neutral-400">
+  </div>
   <!-- Footer 2 -->
   <footer class="footer px-36 pb-28 pt-6 items-center p-4 bg-ticket-footer text-neutral-content">
     <aside class="items-center grid-flow-col">
