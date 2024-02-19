@@ -288,10 +288,10 @@
                 <!-- ================ Here =============================== -->
                 <div class="mr-4">BDT <span class="font-inter" id="total-price">0</span></div>
               </div>
-              <div class="mt-4 mx-4">
+              <div id="cupon-div" class="mt-4 mx-4">
                 <!-- ===================== Here ================================= -->
                 <label class="input h-20 input-bordered flex items-center gap-2">
-                  <input type="text" class="grow" placeholder="Have any Cupon?" />
+                  <input type="text" id="cupon-input" class="grow" placeholder="Have any Cupon?" />
                   <button id="cupon-btn" class="btn bg-ticket-primary text-white" disabled>Apply</button>
                 </label>
               </div>
@@ -301,20 +301,28 @@
               </div>
             </div>
             <div class="m-4">
-              <p class="py-2  font-semibold">Passenger Name*</p>
+
+
+
+              <p class="py-2 font-semibold">Passenger Name</p>
               <label class="input input-bordered flex items-center gap-2 mb-2">
-                <input type="text" id="p-name" class="grow" placeholder="Enter your name" />
+                <input type="text" id="p-name" class="" placeholder="Enter name" />
               </label>
-              <p class="py-2 font-semibold">Phone Number*</p>
+              <p class="py-2 font-semibold">Phone Number</p>
               <label class="input input-bordered flex items-center gap-2 mb-2">
-                <input type="number" id="p-phone" class="grow" placeholder="Enter your phone number" />
-              </label>
-              <p class="py-2 font-semibold">Email ID</p>
-              <label class="input input-bordered flex items-center gap-2 mb-2">
-                <input type="text" id="p-email" class="grow" placeholder="Enter email" />
+                <input type="text" id="p-phone" class="" placeholder="Enter phone" />
               </label>
 
-              <button id="next-btn" class="btn rounded-box h-20 w-full bg-ticket-primary text-white">Next</button>
+              <p class="py-2 font-semibold">Email ID</p>
+              <label class="input input-bordered flex  gap-2 mb-2">
+                <input type="text" class="" placeholder="Enter email" />
+              </label>
+
+              <p class="py-2 font-semibold">Passenger Name*</p>
+
+              <!-- ===================== Here ========================== -->
+              <button id="next-btn" class="btn rounded-box h-20 w-full bg-ticket-primary text-white"
+                disabled>Next</button>
 
               <div class="flex justify-around mt-4">
                 <p><u>Terms and Conditions</u></p>
