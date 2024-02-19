@@ -163,7 +163,8 @@
               <div
                 class="grid bg-green-100 border-ticket-primary rounded-xl text-xl text-ticket-primary font-bold p-4 grid-flow-col gap-4">
                 <a><img src="images/seat-green.png" alt=""></a>
-                <p><span id="seat-rem">40</span> Seats Left</p>
+                <!-- ========================== Here ======================= -->
+                <p><span id="seat-rem" class="font-inter">40</span> Seats Left</p>
               </div>
             </div>
             <div class="flex flex-col mx-6 my-6 rounded-2xl bg-[#F7F8F8]">
@@ -222,19 +223,20 @@
               <div class="mt-4 inline-flex">
                 <div class="mr-6 p-2">A</div>
                 <div class="grid grid-cols-4 gap-8">
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">A1</div>
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg mr-8">A1</div>
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">A1</div>
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">A1</div>
+                  <!-- ======================= Here =============================== -->
+                  <div id="a1" class="py-2 px-10 bg-gray-200 text-center rounded-lg">A1</div>
+                  <div id="a2" class="py-2 px-10 bg-gray-200 text-center rounded-lg mr-8">A2</div>
+                  <div id="a3" class="py-2 px-10 bg-gray-200 text-center rounded-lg">A3</div>
+                  <div id="a4" class="py-2 px-10 bg-gray-200 text-center rounded-lg">A4</div>
                 </div>
               </div>
               <div class="mt-4 inline-flex">
                 <div class="mr-6 p-2">B</div>
                 <div class="grid grid-cols-4 gap-8">
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">B1</div>
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg mr-8">B2</div>
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">B3</div>
-                  <div class="py-2 px-10 bg-gray-200 text-center rounded-lg">B4</div>
+                  <div id="b1" class="py-2 px-10 bg-gray-200 text-center rounded-lg">B1</div>
+                  <div id="b2" class="py-2 px-10 bg-gray-200 text-center rounded-lg mr-8">B2</div>
+                  <div id="b3" class="py-2 px-10 bg-gray-200 text-center rounded-lg">B3</div>
+                  <div id="b4" class="py-2 px-10 bg-gray-200 text-center rounded-lg">B4</div>
                 </div>
               </div>
             </div>
@@ -250,6 +252,7 @@
                   <!-- head -->
                   <thead>
                     <tr>
+                      <!-- ========================== Here ================================== -->
                       <th class="text-base">Seat <sup><span
                             class="font-inter px-2 bg-ticket-primary text-white rounded-lg" id="seat-cnt">0</span></sup>
                       </th>
@@ -282,12 +285,14 @@
               <hr class="mt-2 border-solid border-2 border-neutral-400">
               <div class="mt-4 px-4 flex justify-between">
                 <div>Total Price</div>
+                <!-- ================ Here =============================== -->
                 <div class="mr-4">BDT <span class="font-inter" id="total-price">0</span></div>
               </div>
               <div class="mt-4 mx-4">
+                <!-- ===================== Here ================================= -->
                 <label class="input h-20 input-bordered flex items-center gap-2">
                   <input type="text" class="grow" placeholder="Have any Cupon?" />
-                  <button id="cupon-btn" class="btn bg-ticket-primary text-white">Apply</button>
+                  <button id="cupon-btn" class="btn bg-ticket-primary text-white" disabled>Apply</button>
                 </label>
               </div>
               <div class="mt-4 px-4 pb-4 flex justify-between">
@@ -360,6 +365,7 @@
   </footer>
 
   <!-- custom script -->
+  <script src="scripts/utility.js"></script>
   <script src="scripts/m-ticketing.js"></script>
 </body>
 
